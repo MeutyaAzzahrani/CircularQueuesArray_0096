@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
 
-class Quesues {
+class Queues {
     int FRONT, REAR, max = 5;
     int queue_array[5];
 
 public:
-    Quesues(){
+    Queues(){
         FRONT = -1;
         REAR = -1;
     }
@@ -67,6 +67,26 @@ public:
                 cout << queue_array[FRONT_position] <<  "   ";
                 FRONT_position++;
             }
+            cout << endl;
+        }
+        else {
+            while (FRONT_position <= max -1) {
+                cout << queue_array[FRONT_position] << "   ";
+                FRONT_position++;
+            }
+
+            FRONT_position = 0;
+
+            while (FRONT_position <= REAR_position) {
+                cout << queue_array[FRONT_position] << "   ";
+            }
+            cout << endl;
         }
     }
+};
+
+int main() {
+    Queues q;
+    char ch;
+    
 };
