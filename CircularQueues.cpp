@@ -46,5 +46,13 @@ public:
             FRONT =-1;
             REAR =-1;
         }
+        else {
+            if (FRONT == max -1)
+            FRONT = FRONT + 1;
+        }
+    }
+
+    void display() {
+        
     }
 };
