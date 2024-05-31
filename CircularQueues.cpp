@@ -106,7 +106,9 @@ int main() {
                     q.insert();
                     break;
                 }
-
+                 case '2': {
+                    q.remove();
+                    break;
                 }
                 default: {
                     cout << "Invalid option!!" << endl;
